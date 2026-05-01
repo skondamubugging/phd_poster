@@ -135,15 +135,38 @@ textarea{min-height:52px}
 .ph-admissions{font-family:'Bebas Neue',sans-serif;font-size:1.5rem;color:var(--cream-dark);letter-spacing:6px;line-height:1}
 .ph-tagline{font-size:0.58rem;color:rgba(244,230,201,0.55);letter-spacing:2.5px;text-transform:uppercase;margin-top:5px}
 
-.ph-center{display:flex;align-items:center}
+/*.ph-center{display:flex;align-items:center}
 /* GITAM emblem circle */
-.ph-emblem{
+/*.ph-emblem{
   width:58px;height:58px;border-radius:50%;
   background:var(--cream);
   display:flex;align-items:center;justify-content:center;
   overflow:hidden;border:2px solid rgba(244,230,201,10);
 }
-.ph-emblem img{width:150%;height:150%;object-fit:cover}
+.ph-emblem img{width:150%;height:150%;object-fit:cover}*/
+
+.ph-center {
+  display: flex;
+  align-items: center;
+}
+
+/* GITAM emblem */
+.ph-emblem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent; /* remove circle background */
+  border: none;            /* remove border */
+  width: auto;
+  height: auto;
+}
+
+/* Increase logo size */
+.ph-emblem img {
+  width: 120px;   /* adjust as needed */
+  height: auto;
+  object-fit: contain;
+}
 
 .ph-right{text-align:right;flex-shrink:0}
 .ph-logo-text{font-family:'Bebas Neue',sans-serif;font-size:2.1rem;color:var(--cream);letter-spacing:3px;line-height:1}
